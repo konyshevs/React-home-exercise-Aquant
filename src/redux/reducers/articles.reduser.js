@@ -19,9 +19,6 @@ const articlesReducer = (state = initState, { type, payload }) => {
     case articlesActionTypes.FETCH_ARTICLES_FAILURE:
       return { ...state, isFetching: false, errorMessage: payload };
 
-    case articlesActionTypes.UPDATE_ARTICLES:
-      return { ...state, collections: payload };
-
     default:
       return state;
   }

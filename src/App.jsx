@@ -1,6 +1,6 @@
 import "./App.css";
 import SearchPanel from "./components/search-panel/search-panel.component";
-import ArticlesList from "./components/search-panel/articles-list-page/articles-list.component";
+import ArticlesList from "./components/articles-list-page/articles-list.component";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import ArticlePreview from "../../article-preview/article-preview.component";
-import { fetchArticles } from "../../../redux/actions/articles-actions";
+import ArticlePreview from "../article-preview/article-preview.component";
+import { fetchArticles } from "../../redux/actions/articles-actions";
 import "./articles-list.styles.css";
 
 const ArticlesList = () => {
@@ -11,7 +11,7 @@ const ArticlesList = () => {
   const searchCategory = useSelector((state) => state.search.chosenCategory);
   const dispatch = useDispatch();
   const qUrl = `https://newsapi.org/v2/everything?q="${searchText}"&searchIn&sortBy=popularity&apiKey=b1f7b575a70e481bba97fcf4165743ee`;
-  const categoryUrl = `https://newsapi.org/v2/top-headlines?category=${searchCategory}&apiKey=b1f7b575a70e481bba97fcf4165743ee`;
+  const categoryUrl = `https://newsapi.org/v2/top-headlines?category=${searchCategory}&language=en&apiKey=b1f7b575a70e481bba97fcf4165743ee`;
 
   useEffect(() => {
     // if (isFetching) return;
