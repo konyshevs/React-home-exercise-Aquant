@@ -1,0 +1,14 @@
+.search-panel {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.category {
+  text-align: start;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-between;
+}

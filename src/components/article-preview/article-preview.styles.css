@@ -1,0 +1,9 @@
+.article-preview {
+  width: 22%;
+  margin-bottom: 40px;
+}
+
+.article-preview-img {
+  width: 80%;
+  height: auto;
+}
